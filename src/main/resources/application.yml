@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/friennguage
+    username: developer
+    password: developer
+server:
+  port: 7777
+cloudinary:
+  name: one-person
+  key: 487777781641271
+  secret: QbNKLC0FwKGQ-Cy2tUNLoEjfyyc
