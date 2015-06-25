@@ -16,4 +16,9 @@ public class Auth {
 	@Column(name = "auth_id")
 	public int authId;
 	public String name;
+	
+	
+	public static enum Code {
+		ADMIN, USER
+	}
 }

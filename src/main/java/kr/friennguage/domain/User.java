@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 import lombok.Data;
 
@@ -22,6 +23,7 @@ public class User {
 	public int authId;
 	@Column(name = "u_id")
 	public String uid;
+	public String name;
 	public String sex;
 	public String age;
 	public String job;
@@ -31,6 +33,13 @@ public class User {
 	public int locationId;
 	@Column(name = "language_id")
 	public int languageId;
+	@Column(name = "favor_language_id")
+	public int favorLanguageId;
 	public String content;
 	public Timestamp created;
+	
+	@Transient
+	public String email;
+	@Transient
+	public String password;
 }
